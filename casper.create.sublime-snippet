@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+var ${1:casper} = require('casper').create(${2:);
+]]></content>
+    <description>Create a new Casper instance</description>
+    <tabTrigger>cspc</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+casper.start('${1:http://}', function() {
+    this.test.assertTitle('${2:First title}');
+});
+
+casper.thenOpen('${3:http://}', function() {
+    this.test.assertTitle('${4:Second title}');
+});
+
+casper.run(function() {
+    this.test.done();
+});
+]]></content>
+    <description>Casper test script</description>
+    <tabTrigger>csptest</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

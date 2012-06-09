@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+${1:casper}.on(${2:'event.name'}, function() {
+    ${3:// body...}
+});
+]]></content>
+    <description>Casper.on()</description>
+    <tabTrigger>cspon</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

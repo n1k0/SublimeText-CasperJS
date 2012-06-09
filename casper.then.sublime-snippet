@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+${1:casper}.then(function() {
+    ${2:// body...}
+});
+]]></content>
+    <description>Casper.then()</description>
+    <tabTrigger>cspthen</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

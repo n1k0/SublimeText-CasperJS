@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+${1:casper}.start('${2:http://}', function() {
+    ${3:// body...}
+});
+]]></content>
+    <description>Casper.start()</description>
+    <tabTrigger>cspstart</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
