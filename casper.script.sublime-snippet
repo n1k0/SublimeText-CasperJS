@@ -2,15 +2,15 @@
     <content><![CDATA[
 var ${1:casper} = require('casper').create();
 
-casper.start('${2:http://}', function() {
+${1:casper}.start('${2:http://}', function() {
     ${3:// first step}
 });
 
-casper.${4:then}(function() {
+${1:casper}.${4:then}(function() {
     ${5:// second step}
 });
 
-casper.run();
+${1:casper}.run();
 ]]></content>
     <description>Casper script</description>
     <tabTrigger>cspscript</tabTrigger>

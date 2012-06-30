@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+var ${1:casper} = require('casper').create({
+    logLevel: ${2:"debug"},
+    verbose: true
+});
+]]></content>
+    <description>Create a new Casper instance with debug informations</description>
+    <tabTrigger>cspcd</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
