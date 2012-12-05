@@ -1,5 +1,7 @@
 <snippet>
     <content><![CDATA[
+/*jshint strict:false*/
+/*global CasperError casper console phantom require*/
 casper.start('${1:http://}', function() {
     this.test.assertTitle('${2:First title}');
 });
