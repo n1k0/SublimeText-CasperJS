@@ -20,6 +20,8 @@ Available snippets
 - `csptest`: a basic casperjs test script
 - `cspthen`: `Casper.then()`
 - `csptheno`: `Casper.thenOpen()`
+- `cjsh`: [JSHint](http://jshint.org/) directives for standard casper script
+- `cjsht`: JSHint directives for test casper script
 - `req`: `require()`
 
 License

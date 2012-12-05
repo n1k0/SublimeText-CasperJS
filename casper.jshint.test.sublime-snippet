@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+/*jshint strict:false*/
+/*global CasperError casper console phantom require*/
+]]></content>
+    <description>JSHint directives for test casper script</description>
+    <tabTrigger>jsht</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
