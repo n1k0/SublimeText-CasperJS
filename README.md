@@ -11,6 +11,7 @@ Available snippets
 
 - `cspc`: Create a new Casper instance
 - `cspcd`: Create a new Casper instance with debug mode enabled
+- `cspe`: `throw new CasperError("<message>");`
 - `cspeach`: `Casper.each()`
 - `cspeval`: `Casper.evaluate()`
 - `cspfill`: `Casper.fill()`
