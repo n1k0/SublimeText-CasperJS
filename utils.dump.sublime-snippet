@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+require('utils').dump(${1});
+]]></content>
+    <description>require('utils').dump()</description>
+    <tabTrigger>dmp</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
