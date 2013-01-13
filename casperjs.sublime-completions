@@ -12,6 +12,7 @@
         {"trigger": ".clickLabel", "contents": ".clickLabel('${1:label}');"},
         {"trigger": ".die", "contents": ".die('${1:message}');"},
         {"trigger": ".download", "contents": ".download('http://${1:url}');"},
+        {"trigger": ".debugHTML", "contents": ".debugHTML(${1});"},
         {"trigger": ".each", "contents": ".each(${1:[]}, function(self, item, index) {\n\t${2}\n});"},
         {"trigger": ".echo", "contents": ".echo('${1:}');"},
         {"trigger": ".evaluate", "contents": ".evaluate(function() {\n\t${1}\n});"},
@@ -58,6 +59,16 @@
         {"trigger": ".withFrame", "contents": ".withFrame('${1:frame}', function() {\n\t${2}\n});"},
         {"trigger": ".withPopup", "contents": ".withPopup('${1:popup}', function() {\n\t${2}\n});"},
         {"trigger": ".zoom", "contents": ".zoom(${1:factor});"},
+
+        /* events */
+        {"trigger": ".on", "contents": ".on('${1:event}', function(${2:args}) {\n\t${3:}\n});"},
+
+        /* mouse module API */
+        {"trigger": "mclick", "contents": "mouse.click(${1});"},
+        {"trigger": "mdoubleclick", "contents": "mouse.doubleclick(${1});"},
+        {"trigger": "mdown", "contents": "mouse.down(${1});"},
+        {"trigger": "mmove", "contents": "mouse.move(${1});"},
+        {"trigger": "mup", "contents": "mouse.up(${1});"},
 
         /* tester module API */
         {"trigger": "test.assert", "contents": "test.assert(${1:subject}, '${2:message}');"},
