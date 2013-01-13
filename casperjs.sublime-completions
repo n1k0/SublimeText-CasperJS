@@ -6,13 +6,18 @@
     "completions":
     [
         /* casper module API */
+        {"trigger": ".back", "contents": ".back()"},
+        {"trigger": ".base64encode", "contents": ".base64encode('${1:url}')"},
         {"trigger": ".capture", "contents": ".capture('${1}')"},
+        {"trigger": ".captureBase64", "contents": ".captureBase64('${1:format}', ${2:area})"},
         {"trigger": ".captureSelector", "contents": ".captureSelector('${1:filename}', '${2:.selector}')"},
         {"trigger": ".click", "contents": ".click('${1:.selector}')"},
         {"trigger": ".clickLabel", "contents": ".clickLabel('${1:label}')"},
         {"trigger": ".die", "contents": ".die('${1:message}')"},
         {"trigger": ".download", "contents": ".download('http://${1:url}')"},
+        {"trigger": ".debugPage", "contents": ".debugPage()"},
         {"trigger": ".debugHTML", "contents": ".debugHTML(${1})"},
+        {"trigger": ".die", "contents": ".die('${1:message}')"},
         {"trigger": ".each", "contents": ".each(${1:[]}, function(self, item, index) {\n\t${2}\n})"},
         {"trigger": ".echo", "contents": ".echo('${1:}')"},
         {"trigger": ".evaluate", "contents": ".evaluate(function() {\n\t${1}\n})"},
@@ -21,7 +26,8 @@
         {"trigger": ".exit", "contents": ".exit(${1:0})"},
         {"trigger": ".fetchText", "contents": ".fetchText('${1:text}')"},
         {"trigger": ".fill", "contents": ".fill('${1:.selector}', {\n\t'${2:name}': '${3:value}'\n}, ${4:false})"},
-        {"trigger": ".getPageContent", "contents": ".getPageContent()"},
+        {"trigger": ".forward", "contents": ".forward()"},
+        {"trigger": ".getColorizer", "contents": ".getColorizer()"},
         {"trigger": ".getCurrentUrl", "contents": ".getCurrentUrl()"},
         {"trigger": ".getElementAttribute", "contents": ".getElementAttribute('${1:.selector}', '${2:attribute}')"},
         {"trigger": ".getElementBounds", "contents": ".getElementBounds('${1:.selector}')"},
@@ -30,6 +36,7 @@
         {"trigger": ".getFormValues", "contents": ".getFormValues('${1:.selector}')"},
         {"trigger": ".getGlobal", "contents": ".getGlobal('${1:name}')"},
         {"trigger": ".getHTML", "contents": ".getHTML('${1:.selector}')"},
+        {"trigger": ".getPageContent", "contents": ".getPageContent()"},
         {"trigger": ".getTitle", "contents": ".getTitle()"},
         {"trigger": ".log", "contents": ".log('${1:message}')"},
         {"trigger": ".mouseEvent", "contents": ".mouseEvent('${1:click}', '${2:.selector}')"},
@@ -61,7 +68,11 @@
         {"trigger": ".zoom", "contents": ".zoom(${1:factor})"},
 
         /* events */
+        {"trigger": ".emit", "contents": ".emit('${1:event}')"},
         {"trigger": ".on", "contents": ".on('${1:event}', function(${2:args}) {\n\t${3:}\n})"},
+        {"trigger": ".once", "contents": ".once('${1:event}', function(${2:args}) {\n\t${3:}\n})"},
+        {"trigger": ".removeAllListeners", "contents": ".removeAllListeners('${1:event}')"},
+        {"trigger": ".removeListener", "contents": ".removeListener('${1:event}', ${2:listener})"},
 
         /* mouse module API */
         {"trigger": "mclick", "contents": "mouse.click(${1})"},
