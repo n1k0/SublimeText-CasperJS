@@ -4,6 +4,8 @@ SublimeText-CasperJS
 A collection of [CasperJS](http://casperjs.org/) snippets bundled for
 [SublimeText2](http://sublimetext.com/2).
 
+![](https://s3.amazonaws.com/f.cl.ly/items/3V3O0F1i2319102t3L2h/fg76.gif)
+
 More feature may be added in the future (or not).
 
 Available snippets
