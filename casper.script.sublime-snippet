@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 /*jshint strict:false*/
-/*global CasperError console phantom require*/
+/*global CasperError, console, phantom, require*/
 var ${1:casper} = require('casper').create();
 
 ${1:casper}.start('${2:http://}', function() {

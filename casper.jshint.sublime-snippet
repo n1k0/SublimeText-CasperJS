@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 /*jshint strict:false*/
-/*global CasperError console phantom require*/
+/*global CasperError, console, phantom, require*/
 ]]></content>
     <description>JSHint directives for standard casper script</description>
     <tabTrigger>jsh</tabTrigger>
