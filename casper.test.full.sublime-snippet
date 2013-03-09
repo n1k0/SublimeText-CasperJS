@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+/*jshint strict:false*/
+/*global CasperError, casper, console, phantom, require*/
+casper.test.begin('${1:Test description}', ${2:2}, {
+    setUp: function(test) {
+        ${3:// setup instructions...}
+    },
+
+    tearDown: function(test) {
+        ${4:// tear down instructions...}
+    },
+
+    test: function(test) {
+        ${5:// tests}
+        test.done();
+    }
+});
+]]></content>
+    <description>Casper full test script</description>
+    <tabTrigger>csptestfull</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
