@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+${1:this}.fillXPath('${2:selector}', {
+    '${3:1st-field-xpath}': '${4:value}',
+    '${5:2nd-field-xpath}': '${6:value}'
+}, ${7:true});
+]]></content>
+    <description>Casper.fillXPath()</description>
+    <tabTrigger>cspfillx</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
