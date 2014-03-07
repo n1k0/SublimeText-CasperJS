@@ -26,10 +26,7 @@ Available snippets
 - `cjsh`: [JSHint](http://jshint.org/) directives for standard casper script
 - `cjsht`: JSHint directives for test casper script
 - `req`: `require()`
-<<<<<<< HEAD
 -
-=======
->>>>>>> FETCH_HEAD
 License
 -------
 
