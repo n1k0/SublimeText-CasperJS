@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+${1:var user = }login(hudl.users.${2:user});
+
+]]></content>
+    <description>Login Method</description>
+    <tabTrigger>login</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
