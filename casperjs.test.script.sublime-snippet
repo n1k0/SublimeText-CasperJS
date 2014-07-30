@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+casper.test.begin('${1:Test description}', function suite(test) {
+    ${2:// Setup (login)}
+
+    casper.startCJS('${3:http://}', function() {
+        test.assertTitleMatch('/${4:First title}/', 'Title says ${4:First title}');
+        test.assertUrlMatch('/${5:First title}/', 'Url matches expected');
+    });
+
+    ${6:casper.thenOpenPage('${7:http://}');}
+
+    casper.then(function() {
+        ${8:// second step}
+    });
+
+    casper.run(function() {
+        test.done();
+    });
+});
+
+]]></content>
+    <description>Casper test script</description>
+    <tabTrigger>caspertest</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
